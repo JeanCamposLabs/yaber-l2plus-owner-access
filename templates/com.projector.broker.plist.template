@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.projector.broker</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>PYTHON3_PATH</string>
+    <string>REPO_PATH/scripts/projector_broker.py</string>
+    <string>--listen-host</string>
+    <string>0.0.0.0</string>
+    <string>--listen-port</string>
+    <string>BROKER_PORT</string>
+    <string>--run-dir</string>
+    <string>REPO_PATH/runtime/projector_broker</string>
+    <string>--control-socket</string>
+    <string>REPO_PATH/runtime/projector_broker/control.sock</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>REPO_PATH</string>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>REPO_PATH/runtime/projector_broker/launchd.stdout.log</string>
+  <key>StandardErrorPath</key>
+  <string>REPO_PATH/runtime/projector_broker/launchd.stderr.log</string>
+</dict>
+</plist>

@@ -1,0 +1,11 @@
+runtime/
+*.log
+.DS_Store
+captures/
+*.pcap
+*.jpg
+*.png
+*.jsonl
+build/
+__pycache__/
+*.pyc

@@ -1,0 +1,13 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  syntax:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate scripts
+        run: ./tools/validate.sh
